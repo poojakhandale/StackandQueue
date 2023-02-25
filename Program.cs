@@ -9,14 +9,17 @@ namespace StackandQueue
 
         public static void Main(string[] args)
         {
-            
-                Mystack<int> stack = new Mystack<int>();
-                stack.Push(70);
-                stack.Push(37);
-                stack.Push(56);
-                stack.pop();
-                stack.Peek();
+            {
+                MyQueue<int> queue = new MyQueue<int>();
+
+                queue.Add(50);
+                queue.Add(36);
+                queue.Add(70);
+                queue.dequeue();
+                queue.Display();
             }
         }
     }
-        
+}
+
+

@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using static StackandQueue.MyStack;
+using System.Collections.Generic;
+
 
 namespace StackandQueue
 {
@@ -8,11 +9,14 @@ namespace StackandQueue
 
         public static void Main(string[] args)
         {
-            Mystack<int> stack = new Mystack<int>();
-            stack.Push(70);
-            stack.Push(37);
-            stack.Push(56);
+            
+                Mystack<int> stack = new Mystack<int>();
+                stack.Push(70);
+                stack.Push(37);
+                stack.Push(56);
+                stack.pop();
+                stack.Peek();
+            }
         }
-
     }
-}
+        
